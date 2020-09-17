@@ -18,7 +18,7 @@ function exercise2(){
 
 
     var helper ="";
-        
+
         for(var i =num1 ;i<=num2 ; i++){
             helper = helper + i + " ";
         }
@@ -27,3 +27,4 @@ function exercise2(){
 
     document.getElementById("exercise2").innerHTML=helper;
 }
+

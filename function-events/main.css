@@ -1,0 +1,10 @@
+body {
+    background-color: #222222;
+    font-size: 24px;
+    color: white;
+}
+
+.photo-id{
+    display: inline-block;
+    cursor: pointer;
+}
