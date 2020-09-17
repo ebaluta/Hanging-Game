@@ -38,7 +38,7 @@ function transformPasspord() {
 }
 
 function refreshPassword() {
-    document.getElementById("board").innerHTML = shownEntry;
+    document.getElementById("entrie").innerHTML = shownEntry;
 }
 
 function setResult(number){

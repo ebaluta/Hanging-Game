@@ -14,7 +14,7 @@ body {
 
 }
 
-.board {
+.entrie {
     padding-top: 20px;
     width: 90%;
     margin: 20px 0 100px 0;
@@ -110,12 +110,10 @@ body {
  
 }
 
-.result p {
-    padding-top: 0px;
-}
+
 
 .table {
-    margin-top: 20px;
+
     width: 50%;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -131,3 +129,10 @@ body {
     text-align: center;
 }
 
+p{
+    line-height: 0px;
+}
+
+.board {
+    margin-top: 10px;
+}
