@@ -93,3 +93,41 @@ body {
     border: 2px solid red;
     color: red;
 }
+
+.result{
+    float: left;
+    width: 50%;
+    min-height: 100px;
+ 
+    
+}
+
+.statistic {
+    margin-top: 30px;
+    float: left;
+    width: 50%;
+    min-height: 100px;
+ 
+}
+
+.result p {
+    padding-top: 0px;
+}
+
+.table {
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    background-color: black;
+    border-color: #32383e;
+    color: #ffffff;
+    border: 5px solid #212529;
+    
+}
+
+.table td {
+    background-color: #212529;
+    text-align: center;
+}
+

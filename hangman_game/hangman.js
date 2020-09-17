@@ -10,6 +10,8 @@ const phrases = [
 ]
 
 var result = 0;
+var wins= 0;
+var loses =0;
 
 
 var random = Math.floor(Math.random() * phrases.length) + 1;
@@ -51,6 +53,10 @@ function init() {
     transformPasspord();
     setResult(0);
 
+    wins=0;
+    loses=0;
+    setTable(wins,loses);
+
     refreshPassword();
     setAlphabet();
 }
@@ -89,7 +95,7 @@ function checkLetter(num) {
     refreshPassword();
 
     if (entry == shownEntry) won();
-    else if (currentImage == 9) gameOver();
+    else if (currentImage == 9) lose();
 }
 
 function revealLetter() {
@@ -99,7 +105,7 @@ function revealLetter() {
 function changeImg() {
     currentImage++;
     if (currentImage > 9) {
-        gameOver();
+        lose();
     }
     document.getElementById("image").setAttribute("src", "img/s" + currentImage + ".jpg");
 }
@@ -112,17 +118,21 @@ String.prototype.changeLetter = function (place, char) {
     }
 }
 
-function gameOver() {
+function lose() {
     alert("You have lost game...");
+    loses++;
+    setTable(wins,loses);
     setResult(-10);
     newBoard();
 }
 
 function won() {
     alert("You have won the game!!! :)");
+    wins++;
+    setTable(wins,loses);
     setResult(10);
     newBoard();
-
+    
 }
 
 function newBoard() {
@@ -140,3 +150,7 @@ function newBoard() {
 
 }
 
+function setTable(winsNum,losesNum){
+    document.getElementById("wins").innerHTML=winsNum;
+    document.getElementById("loses").innerHTML=losesNum;
+}
